@@ -64,4 +64,8 @@ print("나눗셈 결과:", float_a / float_b)
 # ValueError = 자료형이 맞지 않을 때 발생 1. 숫자가 아닌 값을 숫자로 변환하려 할 때, 2. int() 함수로 변환 시 소수점이 있는 값을 변환하려 할 때
 
 
+raw_input = input("inch 단위의 숫자를 입력해주세요: ")
+inch = int(raw_input)
+cm = inch * 2.54
+print(inch, "inch는 cm 단위로", cm, "cm입니다.")
 
