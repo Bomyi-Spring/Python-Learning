@@ -39,3 +39,29 @@ print(type("hello"))
 string = input("입력> ")
 print("자료:", string)
 print("자료형:", type(string))
+
+# casting(형변환) = 자료형을 다른 자료형으로 변환하는 것
+# int() = 정수형으로 변환, float() = 실수형으로 변환, str() = 문자열형으로 변환
+string_a = input("입력A> ")
+int_a = int(string_a)
+
+string_b = input("입력B> ")
+int_b = int(string_b)
+
+print("문자열 자료:", string_a + string_b)
+print("숫자 자료:", int_a + int_b)
+
+#----------------------------------------
+
+float_a = float(input("첫 번째 숫자> "))
+float_b = float(input("두 번째 숫자> "))
+
+print("덧셈 결과:", float_a + float_b)
+print("뺄셈 결과:", float_a - float_b)
+print("곱셈 결과:", float_a * float_b)
+print("나눗셈 결과:", float_a / float_b)
+
+# ValueError = 자료형이 맞지 않을 때 발생 1. 숫자가 아닌 값을 숫자로 변환하려 할 때, 2. int() 함수로 변환 시 소수점이 있는 값을 변환하려 할 때
+
+
+
