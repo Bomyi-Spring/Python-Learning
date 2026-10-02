@@ -69,3 +69,35 @@ inch = int(raw_input)
 cm = inch * 2.54
 print(inch, "inch는 cm 단위로", cm, "cm입니다.")
 
+# format() = 문자열이 가지고 있는 함수. {}를 포함한 문자열 뒤에 .format() / 중괄호 개수 = format() 안에 들어가는 값의 개수
+ 
+format_a = "{}만원".format(5000)
+format_b = "파이썬 열공해 첫 연봉 {}만원 만들기".format(5000)
+format_c = "{} {} {}".format(3000, 4000, 5000)
+format_d = "{} {} {}".format(1, "문자열", True)
+
+print(format_a)
+print(format_b)
+print(format_c)
+print(format_d)
+
+#  {} 개수가 forat() 안에 들어가는 값의 개수보다 많으면 IndexError 발생
+
+# upper() = 문자열의 알파벳을 모두 대문자로 변환, lower() = 문자열의 알파벳을 모두 소문자로 변환
+# strip() = 문자열의 양쪽 공백 제거, lstrip() = 문자열의 왼쪽 공백 제거, rstrip() = 문자열의 오른쪽 공백 제거
+# isㅇㅇ() = 문자열이 특정 조건을 만족하는지 확인하는 함수 > 출력은 True or False
+# find() = 문자열에서 특정 문자열을 찾아서 위치를 반환, 없으면 -1 반환
+# rfind() = 문자열에서 특정 문자열을 뒤에서부터 찾아서 위치를 반환, 없으면 -1 반환
+# split() = 문자열을 특정 구분자로 나누어 리스트로 반환
+# in 연산자 = 특정 문자열이 포함되어 있는지 확인 > 출력은 True or False
+# f-string = 문자열 앞에 f를 붙이고, {} 안에 변수명을 넣으면 해당 변수의 값이 문자열 안에 들어감
+
+# 보통 f-string을 format()보다 더 많이 사용함 but 문자열 내용이 너무 많을 때, 데이터를 리스트에 담아서 사용할 때 format()이 더 유리함
+pi = 3.141592
+r = float(input("구의 반지름을 입력해주세요> "))
+부피 = (4/3) * 3.14 * (r ** 3)
+겉넓이 = 4 * 3.14 * (r ** 2)
+print(f"구의 부피는 {부피}입니다.")
+print(f"구의 겉넓이는 {겉넓이}입니다.")
+
+
